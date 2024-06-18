@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_line - Imprime guiones bajos en función de 
+ * print_line - Imprime guiones bajos en función d
  * @n:  Los ti  Los tiempos de los guiones bajos
  * Return: No
  */
