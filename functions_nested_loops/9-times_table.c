@@ -1,5 +1,4 @@
 #include "main.h"
-#include "9.01-putchar.c"
 /**
  * times_table - prints a table
  * Return: No return
