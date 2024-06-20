@@ -10,6 +10,6 @@ void _puts(char *str)
 
 	for (lent = 0; str[lent] != '\0'; lent++)
 	{
-		_putchar(lent);
+		._putchar(lent);
 	}
 }
