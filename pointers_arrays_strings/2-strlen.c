@@ -1,16 +1,17 @@
 #include "main.h"
 /**
- * _strlen - cuenta los caracteres de la array
+ * _strlen - cuenta
  *
- * @lent: almacena los numeros contados
+ * @s: almacena
+ *
  * Return: retona la cantidad de los caracteres de la cadena
- */  
+ */
 int _strlen(char *s)
 {
 	int lent;
 
-	for (len = 0; s[len]!= '\0'; len++)
+	for (lent = 0; s[lent] != '\0'; lent++)
 	{
-		return(len);
 	}
+	return (lent);
 }
