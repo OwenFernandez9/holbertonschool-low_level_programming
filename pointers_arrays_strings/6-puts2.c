@@ -11,7 +11,7 @@ void puts2(char *str)
 
 	for (a = 0; str[a] != '\0'; ++a)
 	{
-		if (a % 2 != 0) /* no es divisible entre 2 */
+		if (a % 2 != 0)
 			continue;
 		else
 			_putchar(str[a]);
