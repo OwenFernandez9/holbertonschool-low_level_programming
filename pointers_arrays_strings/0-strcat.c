@@ -2,22 +2,24 @@
 /**
  * _strcat - junta dos string
  *
- * @src: array 1
- * @dest : array 2
+ * @src: string 2
+ * @dest : string 1
  *
- * Return: las dos arrays
+ * Return: las dos string
  */
 char *_strcat(char *dest, char *src)
 {
 	int i = 0;
 	int j = 0;
 
-	for (i = 0; src[i] != '\0'; i++)
+	for (i = 0; dest[i] != '\0'; i++)
 	{
 	}
-	for (j = 0; dest[j] != '\0'; j++, i++)
+	for (j = 0; src[j] != '\0'; j++)
 	{
-		src[i] = dest[j];
+		dest[i + j] = src[j];
 	}
+	dest[i + j] = '\0';
+
 	return (dest);
 }
