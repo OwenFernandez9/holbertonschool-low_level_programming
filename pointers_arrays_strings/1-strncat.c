@@ -1,6 +1,6 @@
 #include "main.h"
-/** 
- * _strcat - junta dos string
+/**
+ * _strncat - junta dos string
  *
  * @n: cantidad de bytes
  * @src: string 2
@@ -16,7 +16,7 @@ char *_strncat(char *dest, char *src, int n)
 	for (i = 0; dest[i] != '\0'; i++)
 	{
 	}
-	for (j = 0; j < n src[j] != '\0'; j++)
+	for (j = 0; j < n && src[j] != '\0'; j++)
 	{
 		dest[i + j] = src[j];
 	}
