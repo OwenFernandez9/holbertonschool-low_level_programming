@@ -1,15 +1,19 @@
 #include "main.h"
 /**
+ * _memset - aaa
+ *
+ * @s: puntero
+ * @b: b
+ * @n: cantidad bytes
+ * Return: s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	int l;
-	
-	for (l = 0; n < l && s[l]; l++)
+	unsigned int i;
+
+	for (i = 0; i < n;  i++)
 	{
-		if ( n > l)
-		{
-			src[l] = '\0';
-		}
-		
+		s[i] = b;
+	}
+	return (s);
 }
