@@ -1,5 +1,12 @@
 #include "main.h"
+#include <stdio.h>
 /**
+ * _strchr - aaaa
+ *
+ * @s: s
+ * @c: c
+ *
+ * Return: NULL
  */
 char *_strchr(char *s, char c)
 {
@@ -7,8 +14,14 @@ char *_strchr(char *s, char c)
 	{
 		if (*s == c)
 		{
-			return s;
+			return (s);
 		}
 	}
+
+	if (c == '\0')
+	{
+		return (s);
+	}
+
 	return (NULL);
 }
