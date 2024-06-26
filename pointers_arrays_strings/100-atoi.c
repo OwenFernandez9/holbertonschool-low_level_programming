@@ -1,29 +1,33 @@
 #include "main.h"
+#include <stdio.h>
 /**
+ * _atoi - aaa
+ *
+ * @s: s
+ * Return: retorno
  */
 int _atoi(char *s)
 {
-	int i = 0, m = -1, p = 0;
-	int viElNumero = 0, resultado = 0, contMenos = 0;
+	int sign = 1;
+	int num = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (; *s != '\0'; s++)
 	{
-		if (viElNumero)
+		if (*s == '-')
 		{
-			if (s[i] no es un numero)
-				rompo;
-			
-
-
+			sign = -sign;
 		}
-		else
+		else if (*s == '+')
 		{
-			if (s[i] == '-')
-				contMenos = contMenos + 1
 		}
-
-		if (s[i] es un numero)
-			viElNumero = 1;
-
+		else if (*s >= '0' && *s <= '9')
+		{
+			num = num * 10 + (*s - '0');
+		}
+		else if (num != 0)
+		{
+			break;
+		}
 	}
+	return (sign * num);
 }
