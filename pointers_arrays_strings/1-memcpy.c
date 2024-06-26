@@ -5,6 +5,8 @@
  * @dest: 1
  * @src: 2
  * @n: n
+ *
+ * Return: Dest
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
