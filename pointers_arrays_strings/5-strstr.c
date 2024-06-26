@@ -1,27 +1,39 @@
 #include "main.h"
-#include <stddef.h>
-
+#include <stdio.h>
 /**
- * _strpbrk - aaaa
+ * _strstr - aaaa
  *
- * @s: string
- * @accept: string
+ * @haystack: haystack
+ * @needle: needle
  *
- * Return: pointer
+ * Return: return
  *
  */
 
-char *_strpbrk(char *s, char *accept)
+char *_strstr(char *haystack, char *needle)
 {
-	for (; *s != '\0'; s++)
+	if (*needle == '\0')
 	{
-		for (char *p = accept; *p != '\0'; p++)
-		{
-			if (*s == *p)
-			{
-				return s;
-			}
-		}
+		return (haystack);
 	}
-	return NULL;
+
+	while (*haystack != '\0')
+	{
+		char *h = haystack;
+		char *n = needle;
+
+		while (*n != '\0' && *h == *n)
+
+		{
+			h++;
+			n++;
+		}
+
+	if (*n == '\0')
+	{
+		return (haystack);
+	}
+		haystack++;
+	}
+	return (NULL);
 }
