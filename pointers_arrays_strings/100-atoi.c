@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <limits.h>
 /**
  * _atoi - aaa
  *
@@ -26,9 +27,9 @@ int _atoi(char *s)
 			if (num > INT_MAX)
 			{
 				if (sign == 1)
-					return INT_MAX;
+					return (INT_MAX);
 				else
-					return INT_MIN;
+					return (INT_MIN);
 			}
 		}
 		else if (num != 0)
