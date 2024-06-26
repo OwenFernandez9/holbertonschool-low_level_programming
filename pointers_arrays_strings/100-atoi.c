@@ -23,11 +23,18 @@ int _atoi(char *s)
 		else if (*s >= '0' && *s <= '9')
 		{
 			num = num * 10 + (*s - '0');
+			if (num > INT_MAX)
+			{
+				if (sign == 1)
+					return INT_MAX;
+				else
+					return INT_MIN;
+			}
 		}
 		else if (num != 0)
 		{
 			break;
 		}
 	}
-	return (sign * num);
+	return (sign * (int)num);
 }
