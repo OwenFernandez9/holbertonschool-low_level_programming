@@ -1,31 +1,29 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * _strpbrk - aaaa
  *
  * @s: s
  * @accept: accept
  *
- * Return: NULL
+ * Return: s
  *
  */
-
 char *_strpbrk(char *s, char *accept)
 {
-	int i, j;
-
-	for (i = 0; s[i] != '\0'; i++)
+	while (*s != '\0')
 	{
-		for (j = 0; accept[j] != '\0'; j++)
+		char *p = accept;
+
+		while (*p != '\0')
 		{
-			if (s[i] == accept[j])
+			if (*s == *p)
 			{
-				return &s[i];
+				return (s);
 			}
+			p++;
 		}
-		if (accept[j] == '\0')
-		{
-			break;
-		}
+		s++;
 	}
-	return NULL;
+	return (NULL);
 }
