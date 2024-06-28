@@ -1,5 +1,9 @@
 #include <stdio.h>
 /**
+ * main - main
+ *
+ * @argc: unused
+ * @argv: array contenedora de arrays
  */
 int main(int argc, char *argv[])
 {
