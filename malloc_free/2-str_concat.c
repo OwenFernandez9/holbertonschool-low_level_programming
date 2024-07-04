@@ -10,7 +10,10 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int l1; int l2; int x; int x2 = 0;
+	int l1;
+	int l2;
+	int x;
+	int x2;
 	char *s3;
 
 	if (s1 == NULL)
@@ -33,8 +36,8 @@ char *str_concat(char *s1, char *s2)
 	for (x = 0; x < l1; x++)
 	{
 		s3[x] = s1[x];
-	}	
-	for(x2 = 0; x2 < l2; x2++)
+	}
+	for (x2 = 0; x2 < l2; x2++)
 	{
 		s3[x] = s2[x2];
 		x++;
