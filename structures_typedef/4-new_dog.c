@@ -1,4 +1,5 @@
 #include "dog.h"
+#include <stdlib.h>
 /**
  * _strncpy - copia
  * @dest: dest
@@ -38,32 +39,35 @@ dog_t *new_dog(char *name, float age, char *owner)
 	int lo;
 	dog_t *p;
 
-	for (ln = 0; newname[ln] != '\0'; ln++)
+	for (ln = 0; name[ln] != '\0'; ln++)
 	{}
 
-	for (ln = 0; newname[ln] != '\0'; ln++)
+	for (lo = 0; owner[lo] != '\0'; lo++)
 	{}
 
-	p = malloc(sizeof(dog_t);
+	p = malloc(sizeof(dog_t));
 	if (p == NULL)
 	{
 		return (NULL);
 	}
-	newname = strncpy(name);
-	newname = malloc(sizeof(char) * ln);
+	newname = malloc(sizeof(char) * (ln + 1));
 	if (newname == NULL)
 	{
 		free(p);
 		return (NULL);
 	}
-	newowner = strncpy(owner);
-	newowner = malloc(sizeof(char) * lo);
+
+	_strncpy(newname, name, ln + 1);
+
+	newowner = malloc(sizeof(char) * (lo + 1));
 	if (newowner == NULL)
 	{
 		free(newname);
 		free(p);
 		return (NULL);
 	}
+
+	_strncpy(newowner, owner, lo + 1);
 	p->name = newname;
 	p->age = age;
 	p->owner = newowner;
