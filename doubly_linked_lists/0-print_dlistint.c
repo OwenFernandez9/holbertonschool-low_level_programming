@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stddef.h>
 /**
- * print_dlistint - printear lista doblemente enlazada
+ * print_dlistint - print linked list
  *
  * dlistint_t - aaa
  * @h: puntero a header
