@@ -1,5 +1,9 @@
 #include "lists.h"
 /**
+ * sum_dlistint - aaa
+ * dlistint_t - aaa
+ * @head: head
+ * Return: sum
  */
 int sum_dlistint(dlistint_t *head)
 {
