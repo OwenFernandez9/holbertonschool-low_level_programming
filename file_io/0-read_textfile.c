@@ -1,5 +1,9 @@
 #include "main.h"
 /**
+ * read_textfile - read file
+ * @filename: file
+ * @letters: letters
+ * Return: retorno count
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
